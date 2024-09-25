@@ -13,7 +13,7 @@ management:
   published: true
 features:
   ruby:
-    core: 3.2.23
+    core: 3.2.24
     deprecations: 2.81.1
     examples: 2.81.3
     flattening: 2.81.1
