@@ -927,30 +927,6 @@ actions:
         - lang: ruby
           label: marketing_update_in_app_template
           source: "require 'stackone_client'\n\n\ns = ::StackOne::StackOne.new\ns.config_security(\n  ::StackOne::Shared::Security.new(\n    username: \"\",\n    password: \"\",\n  )\n)\n\n    \nres = s.marketing.update_in_app_template(id=\"<id>\", x_account_id=\"<value>\", marketing_create_in_app_template_request_dto=::StackOne::Shared::MarketingCreateInAppTemplateRequestDto.new(\n  messages: [\n    ::StackOne::Shared::InAppMessages.new(\n      id: \"8187e5da-dc77-475e-9949-af0f1fa4e4e3\",\n      remote_id: \"8187e5da-dc77-475e-9949-af0f1fa4e4e3\",\n      message_type: ::StackOne::Shared::InAppMessagesMessageType.new(\n        source_value: \"Email\",\n      ),\n    ),\n  ],\n  passthrough: {\n    \"other_known_names\": \"John Doe\",\n  },\n))\n\nif ! res.create_result.nil?\n  # handle response\nend"
-  - target: $["paths"]["/unified/marketing/templates/omni_channel"]["get"]
-    update:
-      x-codeSamples:
-        - lang: ruby
-          label: marketing_list_omni_channel_templates
-          source: "require 'stackone_client'\n\n\ns = ::StackOne::StackOne.new\ns.config_security(\n  ::StackOne::Shared::Security.new(\n    username: \"\",\n    password: \"\",\n  )\n)\n\n\nreq = ::StackOne::Operations::MarketingListOmniChannelTemplatesRequest.new(\n  fields_: \"id,remote_id,name,messages,created_at,updated_at,tags\",\n  filter: ::StackOne::Operations::MarketingListOmniChannelTemplatesQueryParamFilter.new(\n    updated_after: \"2020-01-01T00:00:00.000Z\",\n  ),\n  x_account_id: \"<value>\",\n)\n    \nres = s.marketing.list_omni_channel_templates(req)\n\nif ! res.templates_paginated.nil?\n  # handle response\nend"
-  - target: $["paths"]["/unified/marketing/templates/omni_channel"]["post"]
-    update:
-      x-codeSamples:
-        - lang: ruby
-          label: marketing_create_omni_channel_template
-          source: "require 'stackone_client'\n\n\ns = ::StackOne::StackOne.new\ns.config_security(\n  ::StackOne::Shared::Security.new(\n    username: \"\",\n    password: \"\",\n  )\n)\n\n    \nres = s.marketing.create_omni_channel_template(x_account_id=\"<value>\", marketing_create_template_request_dto=::StackOne::Shared::MarketingCreateTemplateRequestDto.new(\n  messages: [\n    ::StackOne::Shared::Message.new(\n      id: \"8187e5da-dc77-475e-9949-af0f1fa4e4e3\",\n      remote_id: \"8187e5da-dc77-475e-9949-af0f1fa4e4e3\",\n      message_type: ::StackOne::Shared::MessageMessageType.new(\n        source_value: \"Email\",\n      ),\n    ),\n  ],\n  passthrough: {\n    \"other_known_names\": \"John Doe\",\n  },\n))\n\nif ! res.create_result.nil?\n  # handle response\nend"
-  - target: $["paths"]["/unified/marketing/templates/omni_channel/{id}"]["get"]
-    update:
-      x-codeSamples:
-        - lang: ruby
-          label: marketing_get_omni_channel_template
-          source: "require 'stackone_client'\n\n\ns = ::StackOne::StackOne.new\ns.config_security(\n  ::StackOne::Shared::Security.new(\n    username: \"\",\n    password: \"\",\n  )\n)\n\n\nreq = ::StackOne::Operations::MarketingGetOmniChannelTemplateRequest.new(\n  id: \"<id>\",\n  fields_: \"id,remote_id,name,messages,created_at,updated_at,tags\",\n  x_account_id: \"<value>\",\n)\n    \nres = s.marketing.get_omni_channel_template(req)\n\nif ! res.template_result.nil?\n  # handle response\nend"
-  - target: $["paths"]["/unified/marketing/templates/omni_channel/{id}"]["patch"]
-    update:
-      x-codeSamples:
-        - lang: ruby
-          label: marketing_update_omni_channel_template
-          source: "require 'stackone_client'\n\n\ns = ::StackOne::StackOne.new\ns.config_security(\n  ::StackOne::Shared::Security.new(\n    username: \"\",\n    password: \"\",\n  )\n)\n\n    \nres = s.marketing.update_omni_channel_template(id=\"<id>\", x_account_id=\"<value>\", marketing_create_template_request_dto=::StackOne::Shared::MarketingCreateTemplateRequestDto.new(\n  messages: [\n    ::StackOne::Shared::Message.new(\n      id: \"8187e5da-dc77-475e-9949-af0f1fa4e4e3\",\n      remote_id: \"8187e5da-dc77-475e-9949-af0f1fa4e4e3\",\n      message_type: ::StackOne::Shared::MessageMessageType.new(\n        source_value: \"Email\",\n      ),\n    ),\n  ],\n  passthrough: {\n    \"other_known_names\": \"John Doe\",\n  },\n))\n\nif ! res.create_result.nil?\n  # handle response\nend"
   - target: $["paths"]["/unified/marketing/templates/push"]["get"]
     update:
       x-codeSamples:
