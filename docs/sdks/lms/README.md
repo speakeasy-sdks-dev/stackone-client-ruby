@@ -103,7 +103,6 @@ end
 
 
 
-
 ## create_content
 
 Create Content
@@ -175,7 +174,6 @@ end
 
 
 
-
 ## create_user_completion
 
 Create User Completion
@@ -225,7 +223,6 @@ end
 
 
 
-
 ## get_assignment
 
 Get Assignment
@@ -267,7 +264,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsGetAssignmentResponse)](../../models/operations/lmsgetassignmentresponse.md)**
-
 
 
 
@@ -316,7 +312,6 @@ end
 
 
 
-
 ## get_completion
 
 Get Completion
@@ -358,7 +353,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsGetCompletionResponse)](../../models/operations/lmsgetcompletionresponse.md)**
-
 
 
 
@@ -407,7 +401,6 @@ end
 
 
 
-
 ## get_course
 
 Get Course
@@ -450,7 +443,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsGetCourseResponse)](../../models/operations/lmsgetcourseresponse.md)**
-
 
 
 
@@ -499,7 +491,6 @@ end
 
 
 
-
 ## get_user
 
 Get User
@@ -542,7 +533,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsGetUserResponse)](../../models/operations/lmsgetuserresponse.md)**
-
 
 
 
@@ -591,7 +581,6 @@ end
 
 
 
-
 ## get_user_completion
 
 Get User Completion
@@ -634,7 +623,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsGetUserCompletionResponse)](../../models/operations/lmsgetusercompletionresponse.md)**
-
 
 
 
@@ -687,7 +675,6 @@ end
 
 
 
-
 ## list_categories
 
 List Categories
@@ -732,7 +719,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsListCategoriesResponse)](../../models/operations/lmslistcategoriesresponse.md)**
-
 
 
 
@@ -783,7 +769,6 @@ end
 
 
 
-
 ## list_content
 
 List Content
@@ -828,7 +813,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsListContentResponse)](../../models/operations/lmslistcontentresponse.md)**
-
 
 
 
@@ -879,7 +863,6 @@ end
 
 
 
-
 ## list_skills
 
 List Skills
@@ -924,7 +907,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsListSkillsResponse)](../../models/operations/lmslistskillsresponse.md)**
-
 
 
 
@@ -978,7 +960,6 @@ end
 
 
 
-
 ## list_user_completions
 
 List User Completions
@@ -1027,7 +1008,6 @@ end
 
 
 
-
 ## list_users
 
 List Users
@@ -1072,7 +1052,6 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsListUsersResponse)](../../models/operations/lmslistusersresponse.md)**
-
 
 
 
@@ -1148,7 +1127,6 @@ end
 
 
 
-
 ## upsert_content
 
 Upsert Content
@@ -1217,5 +1195,4 @@ end
 ### Response
 
 **[T.nilable(::StackOne::Operations::LmsUpsertContentResponse)](../../models/operations/lmsupsertcontentresponse.md)**
-
 

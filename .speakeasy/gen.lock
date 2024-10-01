@@ -3,8 +3,8 @@ id: 482384cc-3b98-4ced-bd0b-14aa8b3e0053
 management:
   docChecksum: a4b683935f7cfa2e1af3e5ee16e4fb7a
   docVersion: 1.0.0
-  speakeasyVersion: 1.404.5
-  generationVersion: 2.426.2
+  speakeasyVersion: internal
+  generationVersion: 2.428.5
   releaseVersion: 0.2.41
   configChecksum: e8c4ef81dafec70168021967cd2a81ab
   repoURL: https://github.com/StackOneHQ/stackone-client-ruby.git
@@ -13,7 +13,7 @@ management:
   published: true
 features:
   ruby:
-    core: 3.2.25
+    core: 3.2.26
     deprecations: 2.81.1
     examples: 2.81.3
     flattening: 2.81.1
